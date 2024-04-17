@@ -1,159 +1,55 @@
-# Домашнее задание к занятию "`Git`" - `Тен Денис`
+# Домашнее задание к занятию "`Кеширование Redis/memcached`" - `Тен Денис`
 
 
-### Инструкция по выполнению домашнего задания
+### Задание 1. Кеширование 
 
-   1. Сделайте `fork` данного репозитория к себе в Github и переименуйте его по названию или номеру занятия, например, https://github.com/имя-вашего-репозитория/git-hw или  https://github.com/имя-вашего-репозитория/7-1-ansible-hw).
-   2. Выполните клонирование данного репозитория к себе на ПК с помощью команды `git clone`.
-   3. Выполните домашнее задание и заполните у себя локально этот файл README.md:
-      - впишите вверху название занятия и вашу фамилию и имя
-      - в каждом задании добавьте решение в требуемом виде (текст/код/скриншоты/ссылка)
-      - для корректного добавления скриншотов воспользуйтесь [инструкцией "Как вставить скриншот в шаблон с решением](https://github.com/netology-code/sys-pattern-homework/blob/main/screen-instruction.md)
-      - при оформлении используйте возможности языка разметки md (коротко об этом можно посмотреть в [инструкции  по MarkDown](https://github.com/netology-code/sys-pattern-homework/blob/main/md-instruction.md))
-   4. После завершения работы над домашним заданием сделайте коммит (`git commit -m "comment"`) и отправьте его на Github (`git push origin`);
-   5. Для проверки домашнего задания преподавателем в личном кабинете прикрепите и отправьте ссылку на решение в виде md-файла в вашем Github.
-   6. Любые вопросы по выполнению заданий спрашивайте в чате учебной группы и/или в разделе “Вопросы по заданию” в личном кабинете.
-   
-Желаем успехов в выполнении домашнего задания!
-   
-### Дополнительные материалы, которые могут быть полезны для выполнения задания
+Приведите примеры проблем, которые может решить кеширование. 
 
-1. [Руководство по оформлению Markdown файлов](https://gist.github.com/Jekins/2bf2d0638163f1294637#Code)
+*Приведите ответ в свободной форме.*
+
+### Решение Задание 1. Кеширование 
+
 
 ---
 
-### Задание 1
+### Задание 2. Memcached
 
-#### Создание репозитория
-![Создание репозитория](https://github.com/killakazzak/8-1-git-hw/blob/main/img/2024-02-28_16-32-21.jpg)
+Установите и запустите memcached.
 
-```
-git clone https://github.com/killakazzak/netology.git
-```
-![(https://github.com/killakazzak/8-1-git-hw/blob/main/img/1.jpg)](https://github.com/killakazzak/8-1-git-hw/blob/main/img/1.png)
-```
-git config --global user.name "Denis Ten"
-git config --global user.email "denis.a.ten@gmail.com"
-git status
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/2.png)
-```
-echo "Hello World!" >> README.md
-git status
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/3.png)
-```
-git diff
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/4.png)
+*Приведите скриншот systemctl status memcached, где будет видно, что memcached запущен.*
 
-```
-git add README.md
-git diff --staged
-git status
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/6.png)
-```
-git commit -m 'First commit'
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/7.png)
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/8.png)
-```
-git remote set-url origin https://killakazzak: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@github.com/killakazzak/netology.git
-git push origin main
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/9.png)
-
-[Ссылка на commit](https://github.com/killakazzak/netology/commit/22f3d2506c1b15c3ab6f0682a188c405f8e54892)
+### Решение Задание 2. Memcached
 
 ---
 
-### Задание 2
+### Задание 3. Удаление по TTL в Memcached
 
-```
-touch .gitignore
-git status
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/21.png)
-```
-git add .gitignore
-git status
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/22.png)
-```
-echo "*.pyc" >> .gitignore && echo "cache/" >> .gitignore
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/23.png)
-```
-git add .gitignore
-git commit -m "Second Commit"
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/24.png)
-```
-git push origin main
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/25.png)
+Запишите в memcached несколько ключей с любыми именами и значениями, для которых выставлен TTL 5. 
 
-[Ссылка на README.md](https://github.com/killakazzak/netology/blob/0d2269d19d0a4587a9e5c471208812acfdc84ecc/README.md)
+*Приведите скриншот, на котором видно, что спустя 5 секунд ключи удалились из базы.*
 
-### Задание 3
-```
-git branch dev
-git checkout dev
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/31.png)
-```
-echo "Всем привет!" > test.sh
-git add test.sh
-git commit -m "Commit message"
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/32.png)
-```
-git checkout main
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/33.png)
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/34.png)
+### Решение Задание 3. Удаление по TTL в Memcached
 
-```
-git merge dev
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/35.png)
-```
-git pull
-git push
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/36.png)
+---
 
-[Ссылка на граф](https://github.com/killakazzak/netology/network)
-### Задание 4
-```
-git branch conflict
-git checkout conflict
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/41.png)
-```
-git add test.sh
-git commit -m "conflict commit"
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/42.png)
-```
-git push origin conflict
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/43.png)
-```
-git add test.sh
-git commit -m "commit temp"
-git push origin main
-git merge conflict
-git add test.sh
-git commit -m "Resolved conflict in test.sh"
-git push origin main
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/44.png)
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/45.png)
+### Задание 4. Запись данных в Redis
 
-[Ссылка на файл test.sh](https://github.com/killakazzak/netology/blob/main/test.sh)
+Запишите в Redis несколько ключей с любыми именами и значениями. 
+
+*Через redis-cli достаньте все записанные ключи и значения из базы, приведите скриншот этой операции.*
+
+### Решение Задание 4. Запись данных в Redis
 
 
+## Дополнительные задания (со звёздочкой*)
+Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже разобраться в материале.
+
+### Задание 5*. Работа с числами 
+
+Запишите в Redis ключ key5 со значением типа "int" равным числу 5. Увеличьте его на 5, чтобы в итоге в значении лежало число 10.  
+
+*Приведите скриншот, где будут проделаны все операции и будет видно, что значение key5 стало равно 10.*
+
+### Решение Задание 5*. Работа с числами 
 
 
