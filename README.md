@@ -53,6 +53,42 @@ systemctl status memcached
 
 ### Решение Задание 3. Удаление по TTL в Memcached
 
+Скрипт для записи и проверки memcache-ttl.py
+
+```python
+import time
+import memcache
+
+# Установка подключения к memcached
+client = memcache.Client(['localhost:11211'])
+
+# Запись ключей с TTL 5 секунд
+client.set('key1', 'value1', time=5)
+client.set('key2', 'value2', time=5)
+client.set('key3', 'value3', time=5)
+
+# Проверка наличия ключей перед ожиданием 5 секунд
+print(client.get('key1'))
+print(client.get('key2'))
+print(client.get('key3'))
+
+# Ожидание 5 секунд
+time.sleep(5)
+
+# Проверка отсутствия ключей после ожидания 5 секунд
+print(client.get('key1'))
+print(client.get('key2'))
+print(client.get('key3'))
+```
+
+```bash
+chmod +x memcache-ttl.py
+python3 memcache-ttl.py
+```
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/87119a68-6d12-482c-aa9e-cab98a677cba)
+
+
+
 ---
 
 ### Задание 4. Запись данных в Redis
