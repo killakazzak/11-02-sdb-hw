@@ -120,6 +120,49 @@ systemctl status redis
 ```
 ![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/ce7497bd-c63f-4fea-a7e4-86e7fd8b5d08)
 
+```
+redis-cli
+```
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/7d3cbace-279d-4875-967f-ba480f5d6730)
+
+Файл для записи ключей redis-script.py
+```
+import redis
+
+# Установка подключения к Redis
+client = redis.Redis(host='localhost', port=6379, db=0)
+
+# Запись ключей со значениями
+client.set('key1', 'value1')
+client.set('key2', 'value2')
+client.set('key3', 'value3')
+
+# Получение всех записанных ключей и значений
+keys = client.keys('*')
+values = client.mget(keys)
+
+# Вывод ключей и значений
+for key, value in zip(keys, values):
+    print(key.decode('utf-8'), value.decode('utf-8'))
+```
+```
+Устанавливаем права на запуск
+```
+chmod +x redis-script.py
+```
+Установка модуля
+```
+pip install redis
+```
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/4d1b4b0f-fe3d-4e6f-9b39-bb47842e43da)
+
+Проверка ключей
+
+```
+redis-cli
+keys *
+```
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/d4a63a58-d0f6-409e-a670-4da47fbd2bf4)
 
 
 ## Дополнительные задания (со звёздочкой*)
