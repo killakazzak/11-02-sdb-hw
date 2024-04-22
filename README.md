@@ -159,6 +159,7 @@ pip install redis
 ```
 Проверка ключей
 
+
 ```
 redis-cli
 keys *
