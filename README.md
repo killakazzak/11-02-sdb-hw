@@ -85,7 +85,19 @@ print(client.get('key3'))
 chmod +x memcache-ttl.py
 python3 memcache-ttl.py
 ```
+Устанвка утилиты для работы с Memcache
+
+```
+apt install libmemcached-tools
+```
 ![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/87119a68-6d12-482c-aa9e-cab98a677cba)
+
+```
+memcstat --servers=localhost:11211 | grep curr_items
+```
+
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/cb99bb08-aaf1-4cdc-b6cb-1b96dfe8eacb)
+
 
 
 
