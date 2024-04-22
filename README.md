@@ -145,6 +145,7 @@ values = client.mget(keys)
 for key, value in zip(keys, values):
     print(key.decode('utf-8'), value.decode('utf-8'))
 ```
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/cc342e73-6e35-406d-80b2-7556e451c5d8)
 
 Устанавливаем права на запуск
 ```
@@ -165,7 +166,7 @@ redis-cli ->  keys *
 
 ![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/d4a63a58-d0f6-409e-a670-4da47fbd2bf4)
 
-![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/cc342e73-6e35-406d-80b2-7556e451c5d8)
+
 
 
 
