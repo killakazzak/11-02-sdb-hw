@@ -154,7 +154,8 @@ chmod +x redis-script.py
 ```
 pip install redis
 ```
-![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/4d1b4b0f-fe3d-4e6f-9b39-bb47842e43da)
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/e74710ed-1159-4b3e-bd92-9b95631aac94)
+
 
 Проверка ключей
 
