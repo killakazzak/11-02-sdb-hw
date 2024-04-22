@@ -162,7 +162,7 @@ pip install redis
 
 ```
 redis-cli
-keys *
+keys \*
 ```
 
 ![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/3fd4c55b-f5ff-4f48-85f4-ab9720336430)
