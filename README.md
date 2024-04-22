@@ -99,8 +99,6 @@ memcstat --servers=localhost:11211 | grep curr_items
 ![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/cb99bb08-aaf1-4cdc-b6cb-1b96dfe8eacb)
 
 
-
-
 ---
 
 ### Задание 4. Запись данных в Redis
@@ -110,6 +108,18 @@ memcstat --servers=localhost:11211 | grep curr_items
 *Через redis-cli достаньте все записанные ключи и значения из базы, приведите скриншот этой операции.*
 
 ### Решение Задание 4. Запись данных в Redis
+
+Установка Redis
+```
+sudo apt update && apt install redis
+```
+Проверка установки и состояния службы Redis
+
+```
+systemctl status redis
+```
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/ce7497bd-c63f-4fea-a7e4-86e7fd8b5d08)
+
 
 
 ## Дополнительные задания (со звёздочкой*)
