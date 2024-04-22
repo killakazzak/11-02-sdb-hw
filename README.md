@@ -28,6 +28,20 @@
 *Приведите скриншот systemctl status memcached, где будет видно, что memcached запущен.*
 
 ### Решение Задание 2. Memcached
+Установка Memcached
+
+```
+apt-get install memcached
+```
+Проверка
+```
+systemctl status memcached
+```
+
+
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/221b3f19-c268-42d8-bd14-a11436a6a6d7)
+
+
 
 ---
 
