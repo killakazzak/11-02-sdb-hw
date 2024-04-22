@@ -166,6 +166,11 @@ redis-cli ->  keys *
 
 ![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/d4a63a58-d0f6-409e-a670-4da47fbd2bf4)
 
+Получение значений
+```
+mget key1
+```
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/335bb701-2b90-4fc0-89b3-91292dda2614)
 
 
 
