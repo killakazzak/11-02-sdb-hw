@@ -186,4 +186,10 @@ mget key1
 
 ### Решение Задание 5*. Работа с числами 
 
+Запись ключа key5
+```
+SET key5 5
+```
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/7ff132d7-14ac-47f4-865c-b6abe7e74388)
+
 
