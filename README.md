@@ -156,10 +156,10 @@ pip install redis
 ```
 ![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/0b4ea33a-08b6-442f-801c-20340130e85a)
 
-```
 Проверка ключей
-
-
+```
+redis-cli ->  keys *
+```
 
 ![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/3fd4c55b-f5ff-4f48-85f4-ab9720336430)
 
