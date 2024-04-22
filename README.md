@@ -145,7 +145,7 @@ values = client.mget(keys)
 for key, value in zip(keys, values):
     print(key.decode('utf-8'), value.decode('utf-8'))
 ```
-```
+
 Устанавливаем права на запуск
 ```
 chmod +x redis-script.py
@@ -156,7 +156,7 @@ pip install redis
 ```
 ![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/0b4ea33a-08b6-442f-801c-20340130e85a)
 
-
+```
 Проверка ключей
 
 ```
