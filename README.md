@@ -154,7 +154,8 @@ chmod +x redis-script.py
 ```
 pip install redis
 ```
-![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/e74710ed-1159-4b3e-bd92-9b95631aac94)
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/0b4ea33a-08b6-442f-801c-20340130e85a)
+
 
 
 Проверка ключей
@@ -163,7 +164,13 @@ pip install redis
 redis-cli
 keys *
 ```
+
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/3fd4c55b-f5ff-4f48-85f4-ab9720336430)
+
 ![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/d4a63a58-d0f6-409e-a670-4da47fbd2bf4)
+
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/cc342e73-6e35-406d-80b2-7556e451c5d8)
+
 
 
 ## Дополнительные задания (со звёздочкой*)
