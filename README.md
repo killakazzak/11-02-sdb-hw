@@ -157,7 +157,6 @@ pip install redis
 ![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/0b4ea33a-08b6-442f-801c-20340130e85a)
 
 
-
 Проверка ключей
 
 ```
