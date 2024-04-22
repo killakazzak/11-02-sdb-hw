@@ -192,4 +192,14 @@ SET key10 5
 ```
 ![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/7ff132d7-14ac-47f4-865c-b6abe7e74388)
 
+Увеличение значения ключа key10
+```
+INCRBY key10 5
+```
+Проверка
+```
+mget key10
+```
+![image](https://github.com/killakazzak/11-02-sdb-hw/assets/32342205/4333eaa3-11f8-4e8d-b43d-d6b6079069ff)
+
 
